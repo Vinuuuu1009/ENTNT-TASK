@@ -1,38 +1,166 @@
-.App {
-  text-align: center;
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #222; 
+  color: #ccc; 
+  font-size: 18px; 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Dashboard Container */
+.dashboard {
+  
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+  gap: 1rem;
+  padding: 1rem;
+  margin: 0 auto; 
+  max-width: 1000px; 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Dashboard Card */
+.dashboard-card {
+  background-color: black; 
+  border-radius: 4px;
+  padding: 1.5rem; 
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.dashboard-card:hover {
+  transform: scale(1.02); /* Slight scale on hover */
+}
+
+/* Card Header (Title) */
+.dashboard-card-header {
+  font-weight: bold;
+  font-size: 20px; /* Increase header text size */
+  margin-bottom: 0.5rem;
+}
+
+/* Card Content */
+.dashboard-card-content {
+  line-height: 1.5; 
+  font-size: 16px; 
+}
+
+
+.button {
+  background-color: #4CAF50; /* Green color */
+  color: #fff;
+  padding: 1rem 2rem; /* Increase padding for better proportions */
+  border: none;
+  border-radius: 4px;
+  font-size: 16px; /* Increase button text size */
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.button:hover {
+  background-color: black; /* Darker green on hover */
+}
+
+
+a {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 16px; 
+  transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+  color: #0056b3; 
+}
+
+.orders-container {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+h2 {
+  color: black;
+  align-items:center;
+  
+  padding-left:500px;
+ 
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #131313;
+  color: black; /* Change text color to black */
+}
+
+th {
+  background-color: #f2f2f2;
+  color: black;
+}
+
+td select {
+  padding: 5px;
+}
+
+button {
+  padding: 10px;
+  background-color: #007bff;
+  color: black;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+   .products-container {
+    margin: 20px;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .products-container h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .products-container input {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
   }
-}
+  
+  .products-container button {
+    padding: 5px 10px;
+    margin-bottom: 8px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  
+  .products-container table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .products-container th, .products-container td {
+    border: 1px solid black;
+    padding: 8px;
+  }
+  
+  .products-container th {
+    background-color: #f2f2f2;
+  }
+  
+  
+ 
